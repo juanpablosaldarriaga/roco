@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>semana 32</title>
+	<link rel="stylesheet" type="text/css" href="tecno3.css">
+</head>
+
+
+<body onload="alpha()">
+	<div class="xdcudro2" > </div>
+
+	<div onmousedown="omega(event)" onclick="rodaje()"><img src="potterojas.png" class="img" id="move"></div>
+	<script>
+
+		
+			function omega()
+		{
+			console.log(move.style.top);    
+			  console.log(move.style.left);
+			     numx=Math.floor((Math.random() * (70 - 20))+20);
+			         numy=Math.floor((Math.random() * (70 - 20))+20);
+			            move.style.top=numx+"%";
+			                move.style.left=numy+"%";	
+		}
+
+
+
+		function alpha()
+		{
+			var numx=Math.floor((Math.random() * (70 - 20))+20);
+			   var numy=Math.floor((Math.random() * (70 - 20))+20);
+			    move.style.top=numx+"%";
+			      move.style.left=numy+"%";
+		}
+
+	</script>
+</body>
+</html>
